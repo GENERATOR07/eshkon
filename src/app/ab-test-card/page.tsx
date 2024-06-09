@@ -1,14 +1,12 @@
 "use client";
 import { useAppDispatch } from "@/store";
-import styles from "./page.module.css";
-
-import { useEffect } from "react";
 import { setLoaded } from "@/store/slice";
+import React, { useEffect } from "react";
 
-export default function Home() {
+export default function ABTestPage() {
   const dispatch = useAppDispatch();
   useEffect(() => {
     dispatch(setLoaded());
   }, []);
-  return <main className={styles.main}>home</main>;
+  return <div>ab test page not from slug</div>;
 }
